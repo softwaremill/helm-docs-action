@@ -1,0 +1,8 @@
+  name: "helm-docs-action"
+  description: "A GitHub Action for using 'helm-docs'"
+  author: "Michal H. Siemaszko <mhs@into.software>"
+  # TODO: add inputs
+  # docker run --rm --volume "$(pwd):/helm-docs" -u $(id -u) jnorwood/helm-docs:latest
+  runs:
+    using: 'docker'
+    image: 'docker://jnorwood/helm-docs:latest'
